@@ -1,31 +1,15 @@
 <html>
 <head>
-	<style type="text/css">
-		p#demo, p#demo1, p#demo2, p#demo3, p#demo4, p#demo5, p#demo6{    position: absolute;
-    bottom: -33px;
-    left: 250px;font-size: 34px;color: #000;font-family: arial;font-weight: bold;}
-    .q1, .q2{position: relative;
-    overflow: hidden;
-    width: 60%;
-    margin: 30px auto;}
-    h2{font-size: 18px;
-    line-height: 23px;
-    font-family: arial;
-    font-weight: normal;}
-    button {
-    width: 200px;
-    font-size: 15px;
-    font-family: arial;
-    line-height: 20px;
-    background: #5e6c6d;
-    border: 1px solid #5e6c6d;
-    color: #fff;
-    border-radius: 3px;    padding: 10px 0;
-    cursor: pointer;
-}
-	</style>
+<style type="text/css">
+p#demo,p#demo1,p#demo2,p#demo3,p#demo4,p#demo5,p#demo6{position:absolute;bottom:-33px;left:250px;font-size:34px;color:#000;font-family:arial;font-weight:bold;}
+.q1,.q1{position:relative;overflow:hidden;width:60%;margin:30px auto;}
+h2{font-size:18px;line-height:23px;font-family:arial;font-weight:normal;}
+button{width:200px;font-size:15px;font-family:arial;line-height:20px;background:#5e6c6d;border:1px solid #5e6c6d;color:#fff;border-radius:3px;padding:10px 0;cursor:pointer;}
+</style>
 </head>
 <body>
+
+<!-- 1 -->
 <div class="q1">
 <h2>Create a variable called carName, assign the value “Honda City" to it, and display it.</h2>
 
@@ -35,34 +19,9 @@ Ans</button>
 
 <p id="demo"></p>
 </div>
-<script type="text/javascript">
-	var carName = "Volvo";
-	var number = "150";
-	var x, y, z;
-	x = 5;
-	y = 10;
-	var plus = x + y;
-	z = x + y;
-	var firstName="John", lastName = "Doe", age = 35;
 
-	//6
-	function calculateAge(age){
-    return age;
-    }
-
-    const DOB = calculateAge(35);
-
-    //7
-    var text="Hi myself Tanvi";
-	
-
-	//8
-	function promptbox(){
-        alert(text);
-    }
-</script>
-
-<div class="q2">
+<!-- 2 -->
+<div class="q1">
 <h2> Create a variable called number, assign the value 150 to it, and display it</h2>
 
 <button type="button"
@@ -71,8 +30,8 @@ Ans</button>
 
 <p id="demo1"></p>
 </div>
-
-<div class="q2">
+<!-- 3 -->
+<div class="q1">
 <h2>Display the sum of 5 + 10, using two variables x and y</h2>
 
 <button type="button"
@@ -81,7 +40,8 @@ Ans</button>
 
 <p id="demo2"></p>
 </div>
-<div class="q2">
+<!-- 4 -->
+<div class="q1">
 <h2>Create a third variable called z, assign x + y to it, and display it</h2>
 
 <button type="button"
@@ -89,7 +49,8 @@ onclick="document.getElementById('demo3').innerHTML = z">
 Ans</button>
 <p id="demo3"></p>
 </div>
-<div class="q2">
+<!-- 5 -->
+<div class="q1">
 <h2>Use a single var keyword to create three variables with the following values: firstName = “John” lastName = “Doe" age = 35</h2>
 
 <button type="button"
@@ -99,7 +60,8 @@ Ans</button>
 <p id="demo4"></p>
 
 </div>
-<div class="q2">
+<!-- 6 -->
+<div class="q1">
 <h2>Create DOB constant. Assume calculateAge() function will give you age. Store the value of calculateAge() in your variable/constant.</h2>
 
 <button type="button"
@@ -108,8 +70,8 @@ Ans</button>
 
 <p id="demo6"></p>
 </div>
-
-<div class="q2">
+<!-- 7 -->
+<div class="q1">
 <h2> Create a variable, assign some value to your variable and insert the value inside "div" element.</h2>
 
 <button type="button"
@@ -118,8 +80,8 @@ Ans</button>
 
 <p id="demo5"></p>
 </div>
-
-<div class="q2">
+<!-- 8 -->
+<div class="q1">
 <h2> Use above question and use your choice of prompt box to display value of your variable. </h2>
 
 <button type="button"
@@ -128,7 +90,32 @@ Ans</button>
 
 <p id="demo5"></p>
 </div>
+<script type="text/javascript">
+    var carName = "Volvo";
+    var number = "150";
+    var x, y, z;
+    x = 5;
+    y = 10;
+    var plus = x + y;
+    z = x + y;
+    var firstName="John", lastName = "Doe", age = 35;
 
+   
+    function calculateAge(age){
+    return age;
+    }
+
+    const DOB = calculateAge(35);
+
+
+    var text="Hi myself Tanvi";
+    
+
+  
+    function promptbox(){
+        alert(text);
+    }
+</script>
 
 </body>
 </html> 
