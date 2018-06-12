@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>assingment2</title>
+  <style type="text/css">
+  body{font-family: arial;}
+    .container{margin: 0 auto;width: 80%;}
+    h2{    font-weight: normal;
+    font-size: 22px;}
+    button{    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;}
+  </style>
+</head>
+<body>
+<div class="container">
+  <!-- Question 1 -->
+  <div class="Question">
+    <h2> (1) var counter = 0;
+    counter++; ++counter; alert( counter );
+    What will alert this and why?</h2>
+    <button type="button" onclick="promptbox()">Answer</button>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="Question">
+    <h2> (2) var n = 2; n *= 3 + 5; alert( n );
+      What will alert this and why?</h2>
+    <button type="button" onclick="promptbox1()">Answer</button>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="Question">
+    <h2> (3) What are the final values of all variables a, b, c and d after the code below?
+      var a = 1, b = 1; 
+      var c = ++a; 
+      var d = b++;</h2>
+    <button type="button" onclick="promptbox2()">Answer</button>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="Question">
+    <h2> (4) What are the values of a and x after the code below?
+      var a = 2; var x = 1 + (a *= 2);</h2>
+    <button type="button" onclick="promptbox3()">Answer</button>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="Question">
+    <h2> (5) Find greatest among 4 numbers</h2>
+    <button type="button" onclick="promptbox4()">Answer</button>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="Question">
+    <h2> (6) Rewrite this if using the ternary operator '?':
+      1if (a + b < 4) { result = 'Below'; } else { result = 'Over'; }</h2>
+    <button type="button" onclick="promptbox5()">Answer</button>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="Question">
+    <h2> (7) Rewrite following to switch
+    var a = +prompt('a?', ''); if (a == 0) { alert( 0 ); } if (a == 1) { alert( 1 ); } if (a == 2 || a == 3) { alert( '2,3' ); }</h2>
+    <button type="button" onclick="promptbox6()">Answer</button>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="Question">
+    <h2> (8) Write a condition to check if the given age is of a teenager or no.</h2>
+    <button type="button" onclick="promptbox7()">Answer</button>
+  </div>
+
+  <!-- Question 9 -->
+  <div class="Question">
+    <h2> (9) Print/alert todays Day using switch & if-else. Also print a message saying “It is a weekend” if Saturday or Sunday! or be creative.</h2>
+    <button onclick="myFunction()">Answer</button>
+    <p id="demo"></p>
+  </div>
+
+  <!-- Question 10 -->
+  <div class="Question">
+    <h2> (10) Set the color (yellow:morning, blue:evening, black:night) of body tag based on your system time. showcase your creativity</h2>
+    <button type="button" onclick="checkDay()">Answer</button>
+  </div>
+</div>
+
+
+  <script type="text/javascript">
+    //1
+          var counter = 0;
+          counter++; ++counter; ;
+          function promptbox(){
+          alert( counter );
+            alert("counter will display 2 because counter is 0 and it incremented two times");
+        }
+    //2
+         var n = 2; n *= 3 + 5; 
+         function promptbox1(){
+          alert( n );
+            alert("this will display 16 because value of a multipel by some of 3 and 5");
+        }
+        //3
+        function promptbox2(){
+          var a = 1, b = 1; 
+            var c = ++a;
+            var d = b++;
+            alert("c is " + c);
+            alert("a is" + a);
+            alert("this will display 2 because value of a was incremented and then assigned to c");
+            alert("d is " + d);
+            alert("b is " + b);
+            alert("This will display 1 because value of b is assigned to d and then incremented");
+        }
+          
+        //4
+        function promptbox3(){
+            var a = 2; var x = 1 + (a *= 2);
+            alert(a);
+            alert(x);
+            alert("This will alert 5 because 1 is added to multiplication of value of a and 2");
+        }
+        //5
+        function promptbox4(){
+            var array1 = prompt("Enter 4 numbers with ,").split(",");
+            alert((Math.max(...array1)));
+            alert("This will alert the largest number which in this case is "+Math.max(...array1));
+        }
+        
+        //6
+        function promptbox5(){
+          a+b<4 ? result = 'Below' : result = 'Over';
+          var a = 1, b = 2; 
+            alert(result);
+        }
+          //7
+        function promptbox6(){
+            var a ;
+            switch(a= +prompt('a?', '')) {
+              case 0:
+                  alert(0);
+                  break;
+              case 1:
+                  alert(1);
+                  break;
+              case 2:
+              case 3:
+                  alert('2,3');
+                  break;
+              default:
+                alert('nothing');
+              alert("entered number is greater than or equal to 4 then it will alert nothing");
+            }
+        }
+
+          //8
+          function promptbox7(){
+          var age = prompt('Please enter your age?');
+          if(age<=21) {
+            alert("The person is a teenager");
+          }
+          else{
+            alert("The person is an adult");
+          }
+          alert("If age is less than or equal to 21 then it will show The person is a teenager");
+      }
+          //9
+          function myFunction() {
+    var day;
+    switch (new Date().getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case  6:
+            day = "Saturday";
+            break;
+        default:
+            day = "Unknown Day";
+    }
+    alert("Today is " + day );
+}
+//10
+    function checkDay(){
+ var day = new Date();
+ var hrs = day.getHours();
+
+ if(hrs>=0 && hrs<=12)
+ {
+  document.body.style.backgroundColor = "yellow";
+  alert("Good mornig")
+ }
+ else if(hrs>12 && hrs<16)
+ {
+  document.body.style.backgroundColor = "orange";
+  alert("Good afternoon")
+ }
+ else if(hrs>=16 && hrs<=17)
+ {
+  document.body.style.backgroundColor = "blue";
+  alert("Good evening")
+ }
+ else
+ {
+  document.body.style.backgroundColor = "black";
+  alert("Good night")
+ }
+}
+</script>
+</body>
+</html>
